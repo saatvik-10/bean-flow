@@ -28,7 +28,7 @@ export default function MenuScreen() {
   );
 
   return (
-    <Container>
+    <Container style={{backgroundColor: theme.background}}>
       <FlatList
         data={MENU_ITEMS}
         keyExtractor={(item) => item.id.toString()}
@@ -64,7 +64,7 @@ function createStyles(theme, colorScheme) {
     },
     separator: {
       height: 1,
-      backgroundColor: colorScheme === 'light' ? 'papayawhip' : '#000',
+      backgroundColor: colorScheme === 'dark' ? 'papayawhip' : '#000',
       width: '50%',
       maxWidth: 300,
       marginHorizontal: 'auto',
@@ -80,7 +80,7 @@ function createStyles(theme, colorScheme) {
       height: 100,
       marginBottom: 10,
       borderStyle: 'solid',
-      borderColor: colorScheme === 'light' ? 'papayawhip' : '#000',
+      borderColor: colorScheme === 'dark' ? 'papayawhip' : '#000',
       borderWidth: 1,
       borderRadius: 20,
       overflow: 'hidden',
