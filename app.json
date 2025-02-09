@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "L-1",
-    "slug": "L-1",
+    "slug": "bean-flow",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/coffee-icon.png",
@@ -32,6 +32,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "28890c17-dad6-4f22-a9af-111307f70490"
+      }
+    },
+    "owner": "saatvik-10"
   }
 }
